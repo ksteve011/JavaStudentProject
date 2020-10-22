@@ -7,6 +7,10 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { CourseNavigatorComponent } from './course-navigator/course-navigator.component';
+import { routing } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { ServicesComponent } from './services/services.component';
+
 
 @NgModule({
   declarations: [
@@ -14,13 +18,19 @@ import { CourseNavigatorComponent } from './course-navigator/course-navigator.co
     LoginComponent,
     ProfileComponent,
     RegisterComponent,
-    CourseNavigatorComponent
+    CourseNavigatorComponent,
+    ServicesComponent
   ],
   imports: [
+    routing,
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+  UserService,
+  CourseService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,9 +1,11 @@
 <h1>LOGIN</h1>
 
 Username
-<input/>
+<input [(ngModel)]="username">
 <br/>
+
 Password
-<input/>
+<input [(ngModel)]="password">
 <br/>
-<button>LOGIN</button>
+
+<button (click) = "login(username,password)">LOGIN</button>

@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseNavigatorComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private courseService: CourseService) { }
+ courses: [];
   ngOnInit(): void {
+  this.courseService.findAllCourses()
+    .then(courses => this.courses = courses)
+
   }
 
 }
