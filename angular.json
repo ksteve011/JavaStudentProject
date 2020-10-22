@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "JavaStudentProject"
+    }
+  },
+  "defaultProject": "JavaStudentProject",
+  "cli": {
+    "analytics": "05cb394f-c7bb-45b4-9280-36da1ac1898f"
+  }
 }
