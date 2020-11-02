@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {ProfileComponent} from './profile/profile.component';
+import {CourseNavigatorComponent} from './course-navigator/course-navigator.component';
+import {CourseService} from './services/CourseService';
 
 const routes: Routes = [
-  {path: 'course', component: CourseNavigatorComponent}
+  {path: 'course', component: CourseNavigatorComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'profile/:userId', component:ProfileComponent}
+  {path: 'profile/:userId', component: ProfileComponent}
 ];
 
 export const routing=
