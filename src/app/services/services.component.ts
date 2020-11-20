@@ -7,14 +7,6 @@ import { Injectable } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 
-@Injectable()
-export class CourseService{
-  findAllCourses = () =>
-    fetch('http://localhost:8080/api/courses')
-      .then(response => response.json())
-
-}
-
 export class ServicesComponent implements OnInit {
 
   constructor() { }
