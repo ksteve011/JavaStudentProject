@@ -7,8 +7,8 @@ import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RouterModule} from '@angular/router';
-import {UserService} from './services/user.service.client';
-import {CourseService} from '../services/CourseService';
+import { UserService } from './services/user.service.client';
+import { CourseService } from '../service/CourseService';
 import { CourseNavigatorComponent } from './course-navigator/course-navigator.component';
 
 @NgModule({
