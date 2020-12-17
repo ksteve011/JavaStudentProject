@@ -16,15 +16,15 @@ findUserByCredentials(username: String, password: String){
   }
   return null;
 }
-findUserById(id: int){
+/*
+findUserById(id: Int){
  for(let i = 0; i < this.users.length; i++){
+    const user = this.users[i];
     const userid = this.users[i]._id;
     if(id === user._id)
       return user;
   }
   return null;
 }
-
-
-
+*/
 }
