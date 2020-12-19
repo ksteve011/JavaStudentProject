@@ -5,6 +5,7 @@ import { RegisterComponent} from './register/register.component';
 import { ProfileComponent} from './profile/profile.component';
 import {CourseNavigatorComponent} from './course-navigator/course-navigator.component';
 
+
 const routes: Routes = [
   { path: 'course', component: CourseNavigatorComponent},
   { path: 'login', component: LoginComponent},
