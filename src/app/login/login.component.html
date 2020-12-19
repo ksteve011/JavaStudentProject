@@ -1,11 +1,14 @@
 <h1>LOGIN</h1>
 
-Username
-<input [(ngModel)]="username">
-<br/>
+<div>
+  <label for="exampleInputEmail1">Username</label>
+  <input class="form-control" id="exampleInputEmail1" aria-describedby="usernameHelp" placeholder="Enter username" [(ngModel)]="username">
+  <small id="usernameHelp" class="form-text text-muted">Enter your username.</small>
+</div>
+<div>
+  <label for="exampleInputPassword1">Password</label>
+  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="password">
+  <small id="passwordHelp" class="form-text text-muted">Enter your password.</small>
+</div>
 
-Password
-<input [(ngModel)]="password">
-<br/>
-
-<button (click) = "login(username,password)">LOGIN</button>
+<button (click) ="login(username,password)" class="btn btn-primary">Login</button>
