@@ -6,11 +6,11 @@ const app() = express();
 
 app.use(cors())
 
-app.use(express.static(__dirname + '/dist/LibraryManagement'));
+app.use(express.static(__dirname + '/dist/JavaStudentProject'));
 
 app.get('/*', function(req,res) {
 
-  res.sendFile(path.join(__dirname+'/dist/LibraryManagement/index.html'));
+  res.sendFile(path.join(__dirname+'/dist/JavaStudentProject/index.html'));
 });
 
 app.listen(process.env.PORT || 5000);
